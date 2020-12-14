@@ -1,11 +1,11 @@
 "use strict";
 
 let simpleString = 'привет 12 ываыва34 98 3423ыавыа';
-let simpStr = '10 ываыв 8 234ы';
+let simpStr = '10 ываыв 8 234ы dadasd 123112';
 
 
 function reg(str) {
-    let arr = str.match(/(^|\s)\d+(\s|$)/g);
+    let arr = str.match(/(^|(?<=\s))\d+((?=\s)|$)/g);
     return arr;
 };
 
