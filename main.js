@@ -5,7 +5,7 @@ let simpStr = '10 ываыв 8 234ы dadasd 123112';
 
 
 function reg(str) {
-    let arr = str.match(/(^|(?<=\s))\d+((?=\s)|$)/g);
+    let arr = str.match(/(^|(?<=\s))\d+((?=\s)|$)/g).map(Number);
     return arr;
 };
 
